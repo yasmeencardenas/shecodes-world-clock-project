@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link ref="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>SheCodes</title>
 </head>
 <body>
@@ -12,19 +14,19 @@
     </div>
     <select>
         <option value="">Select a city</option>
-        <option value="">Athens</option>
+        <option value="">My current location</option>
         <option value="">London</option>
         <option value="">Paris</option>
         <option value="">Brussels</option>
         <option value="">Amsterdam</option>
     </select>
-    <div class="city">
+    <div class="city" id="Athens"> 
         <h2>Athens</h2>
         <div class="date">February 1, 2024</div>
     </div>
     <div class="time">5:23:10 <small>PM</small></div>
     
-    <div class="city">
+    <div class="city" id="London">
         <h2>London</h2>
         <div class="date">February 1, 2024</div>
     </div>
