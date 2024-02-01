@@ -15,7 +15,7 @@ let parisTime = moment().tz("Europe_Paris");
 
 parisDateElement.innerHTML = parisTime.format("MMMM DD YYYY");
 parisTimeElement.innerHTML = parisTime.format(
-  "h:mm:ss [<small>]A[</small>]";
+  "h:mm:ss [<small>]A[</small>]"
 );
 
 function updateCity(event) {
