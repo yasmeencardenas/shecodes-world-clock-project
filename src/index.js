@@ -5,7 +5,7 @@ let londonTime = moment().tz("Europe_London");
 
 londonDateElement.innerHTML = londonTime.format("MMMM DD YYYY");
 londonTimeElement.innerHTML = londonTime.format(
-  "h:mm:ss [<small>]A[</small>]";
+  "h:mm:ss [<small>]A[</small>]"
 );
 
 let parisElement = document.querySelector("#paris");
