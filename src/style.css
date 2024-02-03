@@ -17,6 +17,7 @@ h2 {
 select {
   display: block;
   width: 100%;
+  font-size: 18px;
   border-radius: 4px;
   padding: 10px;
 }
@@ -26,13 +27,13 @@ select {
   margin: 60px auto;
   background: white;
   padding: 60px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0, 4);
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   border-radius: 10px;
 }
 
 .city {
   display: flex;
-  margin: 20px 0;
+  margin: 10px 0;
   justify-content: space-between;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -46,7 +47,7 @@ select {
   opacity: 0.7;
 }
 .time {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: bold;
 }
 
@@ -58,6 +59,6 @@ select {
 
 footer {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
 }
