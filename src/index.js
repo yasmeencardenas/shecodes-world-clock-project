@@ -1,22 +1,29 @@
-let londonElement = document.querySelector("#london");
-let londonDateElement = londonElement.querySelector(".date");
-let londonTimeElement = londonElement.querySelector(".time");
-let londonTime = moment().tz("Europe_London");
+function updateTime() {
+  // London
+  let londonElement = document.querySelector("#london");
+  let londonDateElement = londonElement.querySelector(".date");
+  let londonTimeElement = londonElement.querySelector(".time");
+  let londonTime = moment().tz("Europe_London");
 
-londonDateElement.innerHTML = londonTime.format("MMMM DD YYYY");
-londonTimeElement.innerHTML = londonTime.format(
-  "h:mm:ss [<small>]A[</small>]"
-);
+  londonDateElement.innerHTML = londonTime.format("MMMM DD YYYY");
+  londonTimeElement.innerHTML = londonTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
+}
+
+// Paris
 
 let parisElement = document.querySelector("#paris");
-let parisDateElement = parisElement.querySelector(".date");
-let parisTimeElement = parisElement.querySelector(".time");
-let parisTime = moment().tz("Europe_Paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment().tz("Europe/Paris");
 
-parisDateElement.innerHTML = parisTime.format("MMMM DD YYYY");
-parisTimeElement.innerHTML = parisTime.format(
-  "h:mm:ss [<small>]A[</small>]"
-);
+    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
