@@ -14,10 +14,10 @@ function updateTime() {
 
   // Paris
 
-  let athensElement = document.querySelector("#athens");
-  if (athensElement) {
-    let parisDateElement = athensElement.querySelector(".date");
-    let parisTimeElement = athensElement.querySelector(".time");
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
     let parisTime = moment().tz("Europe/Paris");
 
     parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
